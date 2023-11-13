@@ -1,5 +1,10 @@
 # Penjelasan Aplikasi menghitung deret Fibonacci
 
+<img src="picture/00.jpg" width=100 align="left">
+<img src="picture/01.jpg" width=100 align="left">
+<img src="picture/02.jpg" width=100 >
+
+-----------------------------------
 ## 1. Metode countUp(View view)
 
 ```JAVA
