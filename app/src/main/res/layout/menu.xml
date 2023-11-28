@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Menu"
-    android:background="@color/darkgrey">
+    android:background="@color/darkgrey"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">>
 
     <ImageView
         android:id="@+id/imageView4"
@@ -47,12 +49,10 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="225dp"
-
         android:fontFamily="@font/montserrat_black"
         android:text="Hai, Rafi"
         android:textColor="@color/milk"
         android:textSize="60px"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,26 +60,55 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="45dp"
-        android:src="@drawable/icon"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/imageView3"
+        android:layout_width="433dp"
+        android:layout_height="969dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/rectangle_1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="648dp"
-        android:layout_height="826dp"
-        android:layout_marginTop="600dp"
-        android:src="@drawable/rectangle_1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        android:id="@+id/imageView7"
+        android:layout_width="400px"
+        android:layout_height="174px"
+        android:layout_marginStart="212dp"
+
+        android:layout_marginTop="485dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434" />
+        app:srcCompat="@drawable/icecold"/>
+
+    <ImageView
+        android:id="@+id/imageViewAlarm"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="400dp"
+        android:clickable="true"
+        android:onClick="OnToggleClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alarm"
+        android:outlineSpotShadowColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="400px"
+        android:layout_height="174px"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hello__" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="563dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/actvt2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

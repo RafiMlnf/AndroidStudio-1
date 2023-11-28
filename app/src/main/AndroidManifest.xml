@@ -15,23 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloApps"
         tools:targetApi="31" >
-        <!--<activity
-            android:name=".MainActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <! -        <activity-->
-        <!--            android:name=".MainActivitySecond"-->
-        <!--            android:exported="true">-->
-
-        <!--            <meta-data android:name="android.support.PARENT_ACTIVITY"-->
-        <!--                       android:value=".MainActivityOne" />-->
-        <!--        </activity>-->
-        <activity android:name=".Alarm"
+        <activity android:name=".Menu"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,29 +25,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ActivityMain">
-            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolSatu ditekan -->
-        </activity>
+        <activity android:name=".ActivityMain"/>
+        <activity android:name=".MainActivity1"/>
+        <activity android:name=".ScrollingIceCold"/>
+        <activity android:name=".Alarm"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity2" />
 
-        <activity android:name=".MainActivity1">
-            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolDua ditekan -->
-        </activity>
-
-        <activity android:name=".ScrollingIceCold">
-            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolTiga ditekan -->
-            <!-- </activity>
-
-            <activity android:name=".Alarm"> -->
-            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolEmpat ditekan -->
-        </activity>
-
-        <activity android:name=".MainActivity">
-            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolLima ditekan -->
-        </activity>
-
-        <activity android:name=".MainActivity2">
-            <!-- Sesuaikan dengan activity yang ingin ditampilkan saat tombolEnam ditekan -->
-        </activity>
     </application>
-
 </manifest>
