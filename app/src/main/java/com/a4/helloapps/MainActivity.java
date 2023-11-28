@@ -57,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
     public int setColor() {
         currentFib++;
         if(currentFib % 2 == 0) {
-            return ContextCompat.getColor(this, R.color.black);
+            return ContextCompat.getColor(this, R.color.neongreen);
         } else {
-            return ContextCompat.getColor(this, R.color.white);
+            return ContextCompat.getColor(this, R.color.ocean);
         }
     }
 }

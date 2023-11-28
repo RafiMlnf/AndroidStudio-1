@@ -7,9 +7,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ShareCompat;
 
-public class SecondActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     public static final String EXTRA_REPLY =
             "com.a4.helloapps.extra.REPLY";

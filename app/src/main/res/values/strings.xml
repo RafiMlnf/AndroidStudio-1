@@ -6,7 +6,7 @@
     <string name="toast_message">Hello Toast!</string>
     <string name="count_initial_value">0</string>
 
-    <string name="app_name">TwoActivity</string>
+    <string name="app_name">Apps</string>
     <string name="editText_main">Enter Your Message Here </string>
     <string name="text_header">Message Recieved</string>
 
@@ -16,7 +16,16 @@
     <string name="editText_second">Enter Your Reply Here</string>
     <string name="text_header_reply">Reply Recieved</string>
 
-<!--    <string name="app_name">My Apllication</string>-->
+    <!-- Random text -->
+
+    <string name="text1">Apa kabar? Anda tampak segar!</string>
+    <string name="text2">Haloo, sudah sarapan?</string>
+    <string name="text3">Jangan lupa main Valorant!</string>
+
+
+
+
+    <!--    <string name="app_name">My Apllication</string>-->
     <string name="article_title">Kasus Sianida</string>
     <string name="article_subtitle">ICE COLD!</string>
     <string name="article_text">In a vault deep inside Abbey Road Studios in London — protected by an unmarked, triple-locked, police-alarmed door — are something like 400 hours of unreleased Beatles recordings, starting from June 2, 1962 and ending with the very last tracks recorded for the Let It Be album. The best of the best were released by Apple Records in the form of the 3-volume Anthology series. For more information, see the Beatles Time Capsule at www.rockument.com. \n\n This volume starts with the first new Beatle song, “Free as a Bird” (based on a John Lennon demo, found only on The Lost Lennon Tapes Vol. 28, and covers the very earliest historical recordings, outtakes from the first albums, and live recordings from early concerts and BBC Radio sessions. \n\n

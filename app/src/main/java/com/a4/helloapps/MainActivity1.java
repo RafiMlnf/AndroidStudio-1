@@ -1,7 +1,6 @@
 package com.a4.helloapps;
 
 import android.content.Intent;
-import android.media.metrics.BundleSession;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -38,7 +37,7 @@ public class MainActivity1 extends AppCompatActivity {
 
     public void launchSecondActivity(View view) {
         Log.d(LOG_TAG, "Button clicked!");
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, MainActivity2.class);
         String message = mMessageEditText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivityForResult(intent, TEXT_REQUEST);
@@ -51,7 +50,7 @@ public class MainActivity1 extends AppCompatActivity {
         if (requestCode == TEXT_REQUEST) {
 
             if (resultCode == RESULT_OK) {
-                String reply = data.getStringExtra(SecondActivity.EXTRA_REPLY);
+                String reply = data.getStringExtra(MainActivity2.EXTRA_REPLY);
 
             mReplyTextView.setVisibility(View.VISIBLE);
 

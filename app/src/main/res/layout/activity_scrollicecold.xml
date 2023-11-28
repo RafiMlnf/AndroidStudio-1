@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.a4.helloapps.MainActivity">
+    tools:context="com.a4.helloapps.MainActivity"
+    android:background="@color/darkgrey">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bg" />
 
     <TextView
         android:id="@+id/article_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@color/grey"
+        android:fontFamily="@font/montserrat_black"
         android:padding="@dimen/padding_regular"
         android:text="@string/article_title"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:textColor="@android:color/white"
+        android:textColor="@color/milk"
         android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/article" >
+        android:layout_below="@+id/article"
+        tools:ignore="NotSibling">
 
     </ScrollView>
 
@@ -32,9 +44,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="771dp"
         android:layout_below="@+id/article_heading"
-        android:layout_marginTop="40dp">
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="60dp">
 
         <TextView
             android:id="@+id/article"
@@ -42,7 +56,8 @@
             android:layout_height="wrap_content"
             android:lineSpacingExtra="@dimen/Line_spacing"
             android:padding="@dimen/padding_regular"
-            android:text="@string/article_text" />
+            android:text="@string/article_text"
+            android:textColor="@color/milk"/>
     </ScrollView>
 
     <TextView
@@ -52,8 +67,11 @@
         android:layout_above="@id/article_heading"
         android:layout_alignParentStart="true"
         android:layout_marginStart="0dp"
-        android:layout_marginBottom="-90dp"
+        android:layout_marginBottom="-140dp"
+        android:fontFamily="@font/montserrat_black"
         android:padding="@dimen/padding_regular"
         android:text="@string/article_subtitle"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        android:textColor="@color/milk" />
+
 </RelativeLayout>
