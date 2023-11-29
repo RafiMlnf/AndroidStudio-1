@@ -44,6 +44,66 @@ public class Menu extends AppCompatActivity {
                 overridePendingTransition(R.anim.slideleft, R.anim.slideright);
             }
         });
+
+        ImageView imageView6 = findViewById(R.id.imageView6);
+        imageView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, ActivityMain.class);
+                startActivity(intent);
+
+                Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
+                imageView6.startAnimation(popOffAnimation);
+                OnToggleClicked();
+
+                overridePendingTransition(R.anim.slideleft, R.anim.slideright);
+            }
+        });
+
+        ImageView imageView8 = findViewById(R.id.imageView8);
+        imageView8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, MainActivity1.class);
+                startActivity(intent);
+
+                Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
+                imageView8.startAnimation(popOffAnimation);
+                OnToggleClicked();
+
+                overridePendingTransition(R.anim.slideleft, R.anim.slideright);
+            }
+        });
+
+        ImageView imageView7 = findViewById(R.id.imageView7);
+        imageView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, ScrollingIceCold.class);
+                startActivity(intent);
+
+                Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
+                imageView7.startAnimation(popOffAnimation);
+                OnToggleClicked();
+
+                overridePendingTransition(R.anim.slideleft, R.anim.slideright);
+            }
+        });
+
+        ImageView imageView9 = findViewById(R.id.imageView9);
+        imageView9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, MainActivity.class);
+                startActivity(intent);
+
+                Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
+                imageView9.startAnimation(popOffAnimation);
+                OnToggleClicked();
+
+                overridePendingTransition(R.anim.slideleft, R.anim.slideright);
+            }
+        });
     }
 
     private String getStringResourceByName (String name){

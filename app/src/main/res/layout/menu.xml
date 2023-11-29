@@ -63,8 +63,10 @@
         android:id="@+id/imageView3"
         android:layout_width="433dp"
         android:layout_height="969dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="272dp"
         android:src="@drawable/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -97,6 +99,8 @@
         android:layout_height="174px"
         android:layout_marginStart="212dp"
         android:layout_marginTop="400dp"
+        android:clickable="true"
+        android:onClick="OnToggleClicked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/hello__" />
@@ -107,8 +111,22 @@
         android:layout_height="400px"
         android:layout_marginStart="45dp"
         android:layout_marginTop="563dp"
+        android:clickable="true"
+        android:onClick="OnToggleClicked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/actvt2"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="563dp"
+        android:clickable="true"
+        android:onClick="OnToggleClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fibonacci" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

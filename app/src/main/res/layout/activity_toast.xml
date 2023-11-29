@@ -12,7 +12,7 @@
         android:id="@+id/input_limit"
         android:layout_width="131dp"
         android:layout_height="45dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="38dp"
         android:background="@drawable/rounded_background"
         android:ems="10"
         android:fontFamily="@font/montserrat_medium"
@@ -33,13 +33,13 @@
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="50dp"
 
+        android:backgroundTint="@color/lightgrey"
         android:fontFamily="@font/montserrat_medium"
         android:onClick="reset"
         android:text="Reset"
         android:textColor="@color/milk"
-        android:backgroundTint="@color/lightgrey"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,14 +52,14 @@
         android:layout_width="244dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="37dp"
 
         android:backgroundTint="@color/lightgrey"
         android:fontFamily="@font/montserrat_medium"
         android:onClick="showToast"
         android:text="Toast"
-        android:textSize="14dp"
         android:textColor="@color/milk"
+        android:textSize="14dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -71,17 +71,17 @@
         android:id="@+id/button_count"
         android:layout_width="190dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="50dp"
 
+        android:backgroundTint="@color/lightgrey"
+        android:fontFamily="@font/montserrat_medium"
         android:onClick="countUp"
         android:text="Count"
-        android:fontFamily="@font/montserrat_medium"
         android:textColor="@color/milk"
-        android:backgroundTint="@color/lightgrey"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
