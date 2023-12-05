@@ -50,8 +50,11 @@ public class MainActivity extends AppCompatActivity {
     public void reset(View view) {
         mCount = 0;
         secondCount = 1;
-        if (mShowCount != null)
+        currentFib = 0; // Reset the color count
+        if (mShowCount != null) {
             mShowCount.setText(Integer.toString(mCount));
+            mShowCount.setTextColor(ContextCompat.getColor(this, R.color.milk));
+        }
     }
 
     public int setColor() {

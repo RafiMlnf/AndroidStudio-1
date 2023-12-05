@@ -8,7 +8,7 @@
     tools:context=".Menu"
     android:background="@color/darkgrey"
     android:fitsSystemWindows="true"
-    android:orientation="vertical">>
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -20,6 +20,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="433dp"
+        android:layout_height="969dp"
+        android:layout_marginTop="272dp"
+        android:src="@drawable/rectangle_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textRandom"
@@ -53,52 +63,22 @@
         android:text="Hai, Rafi"
         android:textColor="@color/milk"
         android:textSize="60px"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="433dp"
-        android:layout_height="969dp"
-        android:layout_marginTop="272dp"
-        android:src="@drawable/rectangle_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layoutAnimation="@anim/fade_in1sec" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="400px"
-        android:layout_height="174px"
-        android:layout_marginStart="212dp"
-
-        android:layout_marginTop="485dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icecold"/>
-
-    <ImageView
-        android:id="@+id/imageViewAlarm"
-        android:layout_width="400px"
-        android:layout_height="400px"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="400dp"
-        android:clickable="true"
-        android:onClick="OnToggleClicked"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/alarm"
-        android:outlineSpotShadowColor="@android:color/black" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="400px"
         android:layout_height="174px"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="392dp"
         android:clickable="true"
         android:onClick="OnToggleClicked"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,27 +86,70 @@
         app:srcCompat="@drawable/hello__" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="400px"
-        android:layout_height="400px"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="563dp"
-        android:clickable="true"
-        android:onClick="OnToggleClicked"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/actvt2"/>
-
-    <ImageView
         android:id="@+id/imageView9"
         android:layout_width="400px"
         android:layout_height="400px"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="563dp"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="557dp"
         android:clickable="true"
         android:onClick="OnToggleClicked"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fibonacci" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="557dp"
+        android:clickable="true"
+        android:onClick="OnToggleClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/actvt2" />
+
+    <ImageView
+        android:id="@+id/imageViewAlarm"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="392dp"
+        android:clickable="true"
+        android:onClick="OnToggleClicked"
+        android:outlineSpotShadowColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alarm" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="400px"
+        android:layout_height="208px"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="467dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icecold" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="400px"
+        android:layout_height="174px"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="721dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maps" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="400px"
+        android:layout_height="174px"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="721dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/valo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

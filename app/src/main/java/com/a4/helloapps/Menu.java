@@ -7,11 +7,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-import androidx.annotation.Nullable;
+
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Random;
-import android.annotation.SuppressLint;
-import androidx.cardview.widget.CardView;
 
 public class Menu extends AppCompatActivity {
 
@@ -26,8 +24,15 @@ public class Menu extends AppCompatActivity {
         int randomIndex = new Random().nextInt(texts.length);
         randomText.setText(getStringResourceByName(texts[randomIndex]));
 
-        Animation fadeIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in);
+        Animation fadeIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in2sec );
         randomText.startAnimation(fadeIn);
+
+
+        TextView textView = findViewById(R.id.textView);
+
+        textView.setVisibility(View.VISIBLE);
+        Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in1sec);
+        textView.startAnimation(fadeInAnimation);
 
 
         ImageView imageViewAlarm = findViewById(R.id.imageViewAlarm);
@@ -99,6 +104,28 @@ public class Menu extends AppCompatActivity {
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
                 imageView9.startAnimation(popOffAnimation);
+                OnToggleClicked();
+
+                overridePendingTransition(R.anim.slideleft, R.anim.slideright);
+            }
+        });
+
+
+        ImageView imageView13 = findViewById(R.id.imageView13);
+        imageView13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW);
+
+                mapIntent.setPackage("com.google.android.apps.maps");
+
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                }
+
+                Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
+                imageView13.startAnimation(popOffAnimation);
                 OnToggleClicked();
 
                 overridePendingTransition(R.anim.slideleft, R.anim.slideright);
