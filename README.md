@@ -1,3 +1,9 @@
+```
+Nama        : Rafi Maulana Firdaus
+NIM         : 312210382
+Mata Kuliah : Pemrograman Web 1
+```
+
 # Penjelasan Aplikasi menghitung deret Fibonacci
 
 <img src="picture/00.jpg" width=100 align="left">
