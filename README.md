@@ -1,5 +1,5 @@
 ```
-Mata Kuliah : Pemrograman Web 1
+Mata Kuliah : Pemrograman Mobile 1
 Dosen       : Donny Maulana, S.Kom., M.M.S.I.
 Nama        : Rafi Maulana Firdaus
 NIM         : 312210382
