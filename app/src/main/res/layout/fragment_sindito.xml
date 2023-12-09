@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/grey">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/empty_tab_layout"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/darkgrey"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="50dp"
+            android:text="hecka': step back and dissapear"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:fontFamily="@font/montserrat_medium"/>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="49dp"
+            app:srcCompat="@drawable/filmicon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="167dp"
+        android:layout_height="260dp"
+        android:src="@drawable/filmaction1"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="hecka': step back and dissapear"
+        android:textColor="@color/milk" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="190dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="★ 5"
+        android:textSize="15dp"
+        android:textColor="@color/milk" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="397dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Sinopsis :"
+        android:textSize="18dp"
+        android:textColor="@color/milk" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="425dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:justificationMode="inter_word"
+        android:text="Dito, seorang mahasiswa pendiam, menjalani kehidupan ganda sebagai ahli hacker yang berkomitmen memerangi kejahatan dunia maya. Ketika serangan siber global mengancam keamanan dunia, Dito membentuk tim dengan teman-teman virtualnya untuk melacak dan menghentikan kelompok peretas. Sambil menjaga rahasia identitasnya, Dito harus mengatasi tantangan dalam kehidupan pribadinya yang semakin rumit. Dalam penyelidikan yang berisiko tinggi, timnya mengungkap plot besar yang melibatkan kekuatan gelap di balik layar. Dalam pertempuran akhir dengan kecerdasan buatan dan perang informasi, Dito dan timnya berjuang untuk menghentikan ancaman global sebelum kekacauan merambah ke dunia nyata."
+        android:textColor="@color/milk"
+        android:textSize="15dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/playbutton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/darkgrey">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Putar Film"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:fontFamily="@font/montserrat_medium"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
