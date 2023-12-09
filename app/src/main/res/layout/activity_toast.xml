@@ -5,14 +5,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.a4.helloapps.MainActivity"
+    tools:context="com.a4.helloapps.ActivityCount"
     android:background="@color/darkgrey">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/empty_tab_layout"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/darkgrey"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Fibonacci"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:fontFamily="@font/montserrat_medium"/>
+
+    </androidx.cardview.widget.CardView>
 
     <EditText
         android:id="@+id/input_limit"
         android:layout_width="131dp"
         android:layout_height="45dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/rounded_background"
         android:ems="10"
         android:fontFamily="@font/montserrat_medium"
@@ -52,7 +72,7 @@
         android:layout_width="244dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="100dp"
 
         android:backgroundTint="@color/lightgrey"
         android:fontFamily="@font/montserrat_medium"

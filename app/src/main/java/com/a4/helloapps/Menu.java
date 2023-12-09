@@ -7,18 +7,21 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
+import com.a4.helloapps.alarm.ActivityAlarm;
+import com.a4.helloapps.chat.ActivityPesan1;
+import com.a4.helloapps.fragment.ViewPagerActivity;
+
 import java.util.Random;
 
 public class Menu extends AppCompatActivity {
 
-    private String[] texts = {"text1", "text2", "text3"};
+    private String[] texts = {"text1", "text2", "text3", "text4", "text5"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu);
+        setContentView(R.layout.activity_menu );
 
         TextView randomText = findViewById(R.id.textRandom);
         int randomIndex = new Random().nextInt(texts.length);
@@ -27,19 +30,17 @@ public class Menu extends AppCompatActivity {
         Animation fadeIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in2sec );
         randomText.startAnimation(fadeIn);
 
-
         TextView textView = findViewById(R.id.textView);
 
         textView.setVisibility(View.VISIBLE);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in1sec);
         textView.startAnimation(fadeInAnimation);
 
-
         ImageView imageViewAlarm = findViewById(R.id.imageViewAlarm);
         imageViewAlarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, Alarm.class);
+                Intent intent = new Intent(Menu.this, ActivityAlarm.class);
                 startActivity(intent);
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
@@ -54,7 +55,7 @@ public class Menu extends AppCompatActivity {
         imageView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, ActivityMain.class);
+                Intent intent = new Intent(Menu.this, ActivityHalo.class);
                 startActivity(intent);
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
@@ -69,7 +70,7 @@ public class Menu extends AppCompatActivity {
         imageView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, MainActivity1.class);
+                Intent intent = new Intent(Menu.this, ActivityPesan1.class);
                 startActivity(intent);
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
@@ -84,7 +85,7 @@ public class Menu extends AppCompatActivity {
         imageView7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, ScrollingIceCold.class);
+                Intent intent = new Intent(Menu.this, ActivityIceCold.class);
                 startActivity(intent);
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
@@ -99,7 +100,7 @@ public class Menu extends AppCompatActivity {
         imageView9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, MainActivity.class);
+                Intent intent = new Intent(Menu.this, ActivityCount.class);
                 startActivity(intent);
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
@@ -131,6 +132,21 @@ public class Menu extends AppCompatActivity {
                 overridePendingTransition(R.anim.slideleft, R.anim.slideright);
             }
         });
+
+        ImageView imageView14 = findViewById(R.id.imageView14);
+        imageView14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, ViewPagerActivity.class);
+                startActivity(intent);
+
+                Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
+                imageView14.startAnimation(popOffAnimation);
+                OnToggleClicked();
+
+                overridePendingTransition(R.anim.slideleft, R.anim.slideright);
+            }
+        });
     }
 
     private String getStringResourceByName (String name){
@@ -142,3 +158,4 @@ public class Menu extends AppCompatActivity {
     private void OnToggleClicked() {
     }
 }
+

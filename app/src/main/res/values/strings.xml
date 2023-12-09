@@ -19,11 +19,13 @@
     <!-- Random text -->
 
     <string name="text1">Apa kabar? Anda tampak segar!</string>
-    <string name="text2">Haloo, sudah sarapan?</string>
+    <string name="text2">Sudah sarapan?</string>
     <string name="text3">Jangan lupa main Valorant!</string>
+    <string name="text4">Semangat jalani harimu!</string>
+    <string name="text5">2 + 2 = 4 - 1 = 3</string>
 
 
-
+    <string name="tab1">Tab 1</string>
 
     <!--    <string name="app_name">My Apllication</string>-->
     <string name="article_title">Kasus Sianida</string>
@@ -45,6 +47,8 @@ She Loves You – Till There Was You – Twist and Shout — Live at the Princes
 Leave My Kitten Alone — One of the lost Beatle songs recorded during the “Beatles For Sale” sessions but never released. This song, written by Little Willie John, Titus Turner, and James McDougal, was a 1959 RnB hit for Little Willie John and covered by Johnny Preston before the Beatles tried it and shelved it. A reference to a “big fat bulldog” may have influenced John’s “Hey Bulldog” (Yellow Submarine album), which is a similar rocker. \n\n
 
 One After 909 — A song recorded for the ¨C11C album was actually worked on way back in the beginning, six years earlier. This take shows how they did it much more slowly, with an RnB feel to it.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

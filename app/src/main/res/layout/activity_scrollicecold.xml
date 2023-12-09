@@ -7,14 +7,15 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.a4.helloapps.MainActivity"
+    tools:context="com.a4.helloapps.ActivityCount"
     android:background="@color/darkgrey">
+
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/bg"
+        app:srcCompat="@drawable/icon_background"
         android:scaleX="1.1"
         android:scaleY="1.1" />
 
@@ -23,11 +24,12 @@
         android:id="@+id/article_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="@color/grey"
+        android:layout_marginTop="28dp"
+        android:background="@color/darkgrey"
         android:fontFamily="@font/montserrat_black"
         android:padding="@dimen/padding_regular"
         android:text="@string/article_title"
+        android:textSize="20dp"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="@color/milk"
         android:textStyle="bold" />
