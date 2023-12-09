@@ -5,7 +5,7 @@ Nama        : Rafi Maulana Firdaus
 NIM         : 312210382
 ```
 
-Hyperlink masing-masing penejelasan setiap tugas :  
+Hyperlink masing-masing penjelasan setiap tugas :  
 - [Penjelasan Toast](Read/READMEToast.md)
 - [Penjelasan Pesan (Activity1&2)]
 - [Penjelasan Fibonacci](Read/READMEFibonacci.md)
