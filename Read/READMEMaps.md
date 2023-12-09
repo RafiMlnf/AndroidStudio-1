@@ -1,6 +1,6 @@
 ## Maps
 
-Lokasi file : [Menu.java](app/src/main/java/com/a4/helloapps/Menu.java)
+Lokasi file : [Menu.java](app/src/main/java/com/a4/helloapps/)
 
 ```JAVA
 @Override
