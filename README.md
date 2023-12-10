@@ -7,7 +7,7 @@ NIM         : 312210382
 
 Hyperlink masing-masing penjelasan setiap activity :  
 - [Penjelasan Toast](Read/READMEToast.md)
-- [Penjelasan Pesan (Activity1&2)]
+- [Penjelasan Pesan (Activity1&2)](Read/READMEPesan.md)
 - [Penjelasan Fibonacci](Read/READMEFibonacci.md)
 - [Penjelasan Alarm](Read/READMEAlarm.md)
 - [Penjelasan Maps](Read/READMEMaps.md)
