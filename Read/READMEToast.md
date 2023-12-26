@@ -1,5 +1,7 @@
 ## Toast
 
+Lokasi file : [ActivityCount.java](../app/src/main/java/com/a4/helloapps/ActivityCount.java)
+
 ```Java
     public void showToast(View view) {
         Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
