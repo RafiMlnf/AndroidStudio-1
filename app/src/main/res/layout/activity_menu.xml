@@ -63,14 +63,13 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="225dp"
         android:fontFamily="@font/montserrat_black"
-        android:text="Hai, Rafi"
         android:textColor="@color/milk"
         android:textSize="60px"
 

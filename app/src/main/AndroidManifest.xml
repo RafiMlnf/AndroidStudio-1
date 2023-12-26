@@ -17,15 +17,14 @@
         android:theme="@style/Theme.HelloApps"
         tools:targetApi="31" >
 
-        <activity android:name=".Menu"
-            android:exported="true">
-            <intent-filter>
+        <activity android:name=".Splash"
+            android:exported="true"><intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <activity android:name=".Menu"/>
         <activity android:name=".ActivityHalo"/>
         <activity android:name=".chat.ActivityPesan1"/>
         <activity android:name=".ActivityIceCold"/>
@@ -35,6 +34,10 @@
         <activity android:name=".fragment.ViewPagerActivity" />
         <activity android:name=".Sinopsis.Sinopsis1" />
         <activity android:name=".Sinopsis.Sinopsis2" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
     </application>
 </manifest>

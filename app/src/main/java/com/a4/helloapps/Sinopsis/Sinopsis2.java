@@ -10,6 +10,6 @@ public class Sinopsis2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView( R.layout.fragment_sinmikael );
+        setContentView(R.layout.fragment_sinmikael);
     }
 }

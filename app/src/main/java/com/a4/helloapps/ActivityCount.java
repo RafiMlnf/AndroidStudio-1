@@ -11,11 +11,8 @@ import android.widget.Toast;
 public class ActivityCount extends AppCompatActivity {
 
     private int mCount = 0;
-
     private int secondCount = 1;
-
     private int currentFib = 0;
-
     private TextView mShowCount;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

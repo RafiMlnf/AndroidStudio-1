@@ -8,35 +8,30 @@
     android:background="@color/grey"
     tools:context=".fragment.ViewPagerActivity">
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/empty_tab_layout"
         android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:backgroundTint="@color/darkgrey"
-        android:layout_height="100dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="73dp"
-            android:layout_marginTop="50dp"
-            android:text="Movie"
-            android:textSize="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="Galeri"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/milk"
-            android:fontFamily="@font/montserrat_medium"/>
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="70px"
-            android:layout_height="70px"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="49dp"
-            app:srcCompat="@drawable/filmicon" />
+            android:fontFamily="@font/montserrat_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.cardview.widget.CardView>
-
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
@@ -47,32 +42,27 @@
         app:tabIndicatorColor="@color/milk"
         app:layout_constraintTop_toBottomOf="@+id/empty_tab_layout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Action" />
+            android:text="Foto" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Comedy" />
+            android:text="Video" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Romance" />
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
