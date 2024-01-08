@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/darkgrey">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Fire Force"
+            android:textColor="@color/milk"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="49dp"
+            app:srcCompat="@drawable/filmicon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="99dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="397dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Sinopsis :"
+        android:textSize="18dp"
+        android:textColor="@color/milk" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="425dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:justificationMode="inter_word"
+        android:text="Pasukan Pemadam Api merupakan kumpulan pecah belah dari brigade yang berselisih, pengamatan Infernal yang tidak normal semakin meningkat di seluruh Tokyo, dan sebuah kelompok yang misterius mengklaim memiliki jawaban tentang api aneh yang menyebabkan kematian keluarga Shinra 12 tahun yang lalu."
+        android:textColor="@color/milk"
+        android:textSize="15dp" />
+
+</RelativeLayout>

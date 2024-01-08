@@ -1,164 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu"
-    android:background="@color/darkgrey"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
+    android:background="@drawable/icon_background"
+    android:visibility="visible"
+    tools:context=".Menu">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="967dp"
-        android:layout_height="850dp"
-        android:src="@drawable/icon_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+    <GridLayout
+        android:layout_width="379dp"
+        android:layout_height="67dp"
+        android:layout_alignBottom="@+id/bottom"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginRight="16dp"
+        android:columnCount="1"
+        android:layout_marginBottom="600dp">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="433dp"
-        android:layout_height="969dp"
-        android:layout_marginTop="272dp"
-        android:src="@drawable/icon_background2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textRandom"
+            android:layout_width="307dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Apa kabar? Anda tampak semangat hari ini."
+            android:textAlignment="textStart"
+            android:textColor="@color/milk"
+            android:textSize="50px" />
+    </GridLayout>
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="433dp"
-        android:layout_height="969dp"
-        android:layout_marginTop="-850dp"
-        android:src="@drawable/icon_background2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <GridLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="16dp">
 
-    <TextView
-        android:id="@+id/textRandom"
-        android:layout_width="307dp"
-        android:layout_height="49dp"
+        <LinearLayout
+            android:id="@+id/icAlarm"
+            android:layout_width="0dp"
+            android:layout_height="470px"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/icon_alarm"
+            android:orientation="vertical">
+        </LinearLayout>
 
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="194dp"
-        android:fontFamily="@font/montserrat_medium"
-        android:text="Apa kabar? Anda tampak semangat hari ini."
-        android:textAlignment="textStart"
+        <LinearLayout
+            android:id="@+id/icHalo"
+            android:layout_width="0dp"
+            android:layout_height="205px"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="1"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon_halo"
+            android:orientation="vertical"/>
 
-        android:textColor="@color/milk"
-        android:textSize="50px"
+        <LinearLayout
+            android:id="@+id/icPesan"
+            android:layout_width="0dp"
+            android:layout_height="470px"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon_pesan"
+            android:orientation="vertical"/>
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:id="@+id/icFibonacci"
+            android:layout_width="0dp"
+            android:layout_height="470px"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon_fibonacci"
+            android:orientation="vertical"/>
 
-    <TextView
-        android:id="@+id/textGreeting"
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/icIceCold"
+            android:layout_width="0dp"
+            android:layout_height="235px"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="95dp"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon_icecold"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/icMaps"
+            android:layout_width="0dp"
+            android:layout_height="205px"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginTop="4dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon_maps"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/icNewRow"
+            android:layout_width="0dp"
+            android:layout_height="205px"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/icon_movie"
+            android:orientation="vertical" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="374dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="225dp"
-        android:fontFamily="@font/montserrat_black"
-        android:textColor="@color/milk"
-        android:textSize="60px"
+        android:layout_alignBottom="@+id/bottom"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="677dp"
+        android:columnCount="1">
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        <TextView
+            android:id="@+id/textGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="225dp"
+            android:fontFamily="@font/montserrat_black"
+            android:layoutAnimation="@anim/fade_in1sec"
+            android:textColor="@color/milk"
+            android:textSize="60px" />
+    </GridLayout>
 
-        android:layoutAnimation="@anim/fade_in1sec" />
-
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="400px"
-        android:layout_height="174px"
-        android:layout_marginStart="217dp"
-        android:layout_marginTop="392dp"
-        android:clickable="true"
-        android:onClick="OnToggleClicked"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_halo" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="400px"
-        android:layout_height="400px"
-        android:layout_marginStart="217dp"
-        android:layout_marginTop="557dp"
-        android:clickable="true"
-        android:onClick="OnToggleClicked"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_fibonacci" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="400px"
-        android:layout_height="400px"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="557dp"
-        android:clickable="true"
-        android:onClick="OnToggleClicked"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_pesan" />
-
-    <ImageView
-        android:id="@+id/imageViewAlarm"
-        android:layout_width="400px"
-        android:layout_height="400px"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="392dp"
-        android:clickable="true"
-        android:onClick="OnToggleClicked"
-        android:outlineSpotShadowColor="@android:color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_alarm" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="400px"
-        android:layout_height="208px"
-        android:layout_marginStart="217dp"
-        android:layout_marginTop="467dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_icecold" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="400px"
-        android:layout_height="174px"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="721dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_maps" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="400px"
-        android:layout_height="174px"
-        android:layout_marginStart="217dp"
-        android:layout_marginTop="721dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon_movie" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

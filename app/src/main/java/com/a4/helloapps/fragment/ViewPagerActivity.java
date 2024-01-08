@@ -17,9 +17,8 @@ public class ViewPagerActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tab_layout);
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Tab1(), "Action");
-        adapter.addFragment(new Tab2(), "Comedy");
-        adapter.addFragment(new Tab3(), "Romance");
+        adapter.addFragment(new Tab1(), "Anime");
+        adapter.addFragment(new Tab2(), "Thriller");
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);

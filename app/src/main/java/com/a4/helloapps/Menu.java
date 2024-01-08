@@ -4,16 +4,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
-import com.a4.helloapps.alarm.ActivityAlarm;
 import com.a4.helloapps.chat.ActivityPesan1;
 import com.a4.helloapps.fragment.ViewPagerActivity;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 import java.util.Calendar;
-
 import java.util.Random;
 
 public class Menu extends AppCompatActivity {
@@ -24,6 +22,14 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        LinearLayout icIceCold = findViewById(R.id.icIceCold);
+        LinearLayout icAlarm = findViewById(R.id.icAlarm);
+        LinearLayout icHalo = findViewById(R.id.icHalo);
+        LinearLayout icPesan = findViewById(R.id.icPesan);
+        LinearLayout icFibonacci = findViewById(R.id.icFibonacci);
+        LinearLayout icMovie = findViewById(R.id.icNewRow);
+        LinearLayout icMaps = findViewById(R.id.icMaps);
 
         // Random teks menu
         TextView randomText = findViewById(R.id.textRandom);
@@ -46,85 +52,85 @@ public class Menu extends AppCompatActivity {
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in1sec);
         textView.startAnimation(fadeInAnimation);
 
-
-        ImageView imageViewAlarm = findViewById(R.id.imageViewAlarm);
-        imageViewAlarm.setOnClickListener(new View.OnClickListener() {
+        icIceCold.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, ActivityAlarm.class);
-                startActivity(intent);
+                startActivity(new Intent(Menu.this, ActivityIceCold.class));
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
-                imageViewAlarm.startAnimation(popOffAnimation);
+                icIceCold.startAnimation(popOffAnimation);
                 OnToggleClicked();
 
                 overridePendingTransition(R.anim.slideleft, R.anim.slideright);
             }
         });
 
-        ImageView imageView6 = findViewById(R.id.imageView6);
-        imageView6.setOnClickListener(new View.OnClickListener() {
+        icAlarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, ActivityHalo.class);
+                Intent intent = new Intent(android.provider.AlarmClock.ACTION_SET_ALARM);
                 startActivity(intent);
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
-                imageView6.startAnimation(popOffAnimation);
+                icAlarm.startAnimation(popOffAnimation);
                 OnToggleClicked();
 
                 overridePendingTransition(R.anim.slideleft, R.anim.slideright);
             }
         });
 
-        ImageView imageView8 = findViewById(R.id.imageView8);
-        imageView8.setOnClickListener(new View.OnClickListener() {
+        icHalo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, ActivityPesan1.class);
-                startActivity(intent);
+                startActivity(new Intent(Menu.this, ActivityHalo.class));
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
-                imageView8.startAnimation(popOffAnimation);
+                icHalo.startAnimation(popOffAnimation);
                 OnToggleClicked();
 
                 overridePendingTransition(R.anim.slideleft, R.anim.slideright);
             }
         });
 
-        ImageView imageView7 = findViewById(R.id.imageView7);
-        imageView7.setOnClickListener(new View.OnClickListener() {
+        icPesan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, ActivityIceCold.class);
-                startActivity(intent);
+                startActivity(new Intent(Menu.this, ActivityPesan1.class));
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
-                imageView7.startAnimation(popOffAnimation);
+                icPesan.startAnimation(popOffAnimation);
                 OnToggleClicked();
 
                 overridePendingTransition(R.anim.slideleft, R.anim.slideright);
             }
         });
 
-        ImageView imageView9 = findViewById(R.id.imageView9);
-        imageView9.setOnClickListener(new View.OnClickListener() {
+        icFibonacci.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, ActivityCount.class);
-                startActivity(intent);
+                startActivity(new Intent(Menu.this, ActivityCount.class));
 
                 Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
-                imageView9.startAnimation(popOffAnimation);
+                icFibonacci.startAnimation(popOffAnimation);
                 OnToggleClicked();
 
                 overridePendingTransition(R.anim.slideleft, R.anim.slideright);
             }
         });
 
+        icMovie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu.this, ViewPagerActivity.class));
 
-        ImageView imageView13 = findViewById(R.id.imageView13);
-        imageView13.setOnClickListener(new View.OnClickListener() {
+                Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
+                icMovie.startAnimation(popOffAnimation);
+                OnToggleClicked();
+
+                overridePendingTransition(R.anim.slideleft, R.anim.slideright);
+            }
+        });
+        icMaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW);
@@ -134,33 +140,17 @@ public class Menu extends AppCompatActivity {
                     Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode("Universitas Pelita Bangsa"));
                     mapIntent.setData(gmmIntentUri);
                     startActivity(mapIntent);
+
+                    Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
+                    icMaps.startAnimation(popOffAnimation);
+                    OnToggleClicked();
+
+                    overridePendingTransition(R.anim.slideleft, R.anim.slideright);
                 }
-
-                Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
-                imageView13.startAnimation(popOffAnimation);
-                OnToggleClicked();
-
-                overridePendingTransition(R.anim.slideleft, R.anim.slideright);
             }
         });
 
-
-        ImageView imageView14 = findViewById(R.id.imageView14);
-        imageView14.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Menu.this, ViewPagerActivity.class);
-                startActivity(intent);
-
-                Animation popOffAnimation = AnimationUtils.loadAnimation(Menu.this, R.anim.popoff);
-                imageView14.startAnimation(popOffAnimation);
-                OnToggleClicked();
-
-                overridePendingTransition(R.anim.slideleft, R.anim.slideright);
-            }
-        });
     }
-
     private String getStringResourceByName (String name){
         String packageName = getPackageName();
         int resId = getResources().getIdentifier(name, "string", packageName);
@@ -185,4 +175,5 @@ public class Menu extends AppCompatActivity {
         return greeting;
     }
 }
+
 

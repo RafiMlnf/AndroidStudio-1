@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/icon_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/darkgrey"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="50dp"
+            android:text="Kimetsu No Yaiba"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/milk"
+            android:fontFamily="@font/montserrat_medium"/>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="49dp"
+            app:srcCompat="@drawable/filmicon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="99dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="397dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Sinopsis :"
+        android:textSize="18dp"
+        android:textColor="@color/milk" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="425dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:justificationMode="inter_word"
+        android:text="Tanjiro Kamado, bergabung dengan Inosuke Hashibira, seorang anak laki-laki yang dibesarkan oleh babi hutan yang memakai kepala babi hutan, dan Zenitsu Agatsuma, seorang anak laki-laki ketakutan yang mengeluarkan kekuatan sejatinya ketika dia tidur, di dalam Kereta Infinity dalam misi baru dengan seorang Pilar Api, Kyojuro Rengoku , Untuk mengalahkan iblis yang telah menyiksa orang-orang dan membunuh pembunuh iblis yang menentangnya!"
+        android:textColor="@color/milk"
+        android:textSize="15dp" />
+
+</FrameLayout>

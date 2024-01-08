@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.a4.helloapps.ActivityCount"
@@ -18,7 +16,6 @@
         app:srcCompat="@drawable/icon_background"
         android:scaleX="1.1"
         android:scaleY="1.1" />
-
 
     <TextView
         android:id="@+id/article_heading"
@@ -34,20 +31,17 @@
         android:textColor="@color/milk"
         android:textStyle="bold" />
 
-
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/article"
         tools:ignore="NotSibling">
-
     </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
     </LinearLayout>
 
     <ScrollView
