@@ -1,3 +1,5 @@
+![header2](https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/3aff9ed7-100a-4edc-8eea-34391c0d29a4)
+
 ```
 Mata Kuliah : Pemrograman Mobile 1
 Dosen       : Donny Maulana, S.Kom., M.M.S.I.
@@ -5,7 +7,7 @@ Nama        : Rafi Maulana Firdaus
 NIM         : 312210382
 ```
 
-Hyperlink masing-masing penjelasan setiap activity :  
+Hyperlink masing-masing penjelasan lengkap setiap activity :  
 - [Penjelasan Toast](Read/READMEToast.md)
 - [Penjelasan Pesan (Activity1&2)](Read/READMEPesan.md)
 - [Penjelasan Fibonacci](Read/READMEFibonacci.md)
@@ -14,13 +16,32 @@ Hyperlink masing-masing penjelasan setiap activity :
 - [Penjelasan Splash]
 - [Penjelasan Fragment]
 
-## Fragment
+---------------------------
+
+## 1. Halo
+Activity pertama yang dibuat adalah Activity Halo. Menampilkan aktivitas teks "Halo! Apa Kabar?"
+
+## 2. Toast
+
+## 3. Scrolling (Ice Cold)
+## 4. Count
+## 5. Fibonacci
+## 6. Intent
+## 7. Pesan
+## 8. Menu
+## 9. Maps
+## 10. Splash
+
+## 11. Fragment
 Task: Buatlah fragment menu dengan tema Genre Film (Action, Komedi dan Romance).  
 Tampilan bisa berisi sinopsis film dan gambar dari film tersebut.
 
 Preview :  
 
 <img src="Read/picture/fragment.gif" width=200>
+
+## 12. Sinopsis
+## 13. Trailer / Playable Video
 
 ----------------------------
 
