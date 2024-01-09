@@ -19,11 +19,35 @@ Hyperlink masing-masing penjelasan lengkap setiap activity :
 ---------------------------
 
 ## 1. Halo
-Activity pertama yang dibuat adalah Activity Halo. Menampilkan aktivitas teks "Halo! Apa Kabar?"
+Activity pertama yang dibuat adalah Activity Halo. Menampilkan aktivitas teks "Halo! Apa Kabar?"  
+  
+<img src="img/halo.jpg" width=100>  
 
 ## 2. Toast
+Pesan pop-up sederhana yang muncul di layar, memberi tahu user status tertentu. Toast biasanya digunakan untuk memberikan umpan balik singkat.
+
+```JAVA
+public void showToast(View view) {
+        Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
+        toast.show();
+    }
+```
+
+```JAVA
+<string name="toast_message">Hello Toast!</string>
+```
 
 ## 3. Scrolling (Ice Cold)
+Menampilkan teks berita yang dapat di scroll. Menggunakan metode `scrollview` yang didalamnya diisi dengan `textview` berita.
+
+```JAVA
+<ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       <TextView ... />
+</ScrollView>
+```
+
 ## 4. Count
 ## 5. Fibonacci
 ## 6. Intent
@@ -40,8 +64,7 @@ Preview :
 
 <img src="Read/picture/fragment.gif" width=200>
 
-## 12. Sinopsis
-## 13. Trailer / Playable Video
+## 12. Sinopsis & Trailer / Playable Video
 
 ----------------------------
 
