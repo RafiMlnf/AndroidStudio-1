@@ -1,3 +1,5 @@
+![header2](https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/3aff9ed7-100a-4edc-8eea-34391c0d29a4)
+
 ```
 Mata Kuliah : Pemrograman Mobile 1
 Dosen       : Donny Maulana, S.Kom., M.M.S.I.
@@ -14,13 +16,28 @@ Hyperlink masing-masing penjelasan lengkap setiap activity :
 - [Penjelasan Splash]
 - [Penjelasan Fragment]
 
-## Fragment
+---------------------------
+
+## 1. Halo
+## 2. Toast
+## 3. Scrolling (Ice Cold)
+## 4. Count
+## 5. Fibonacci
+## 6. Pesan
+## 7. Menu
+## 8. Maps
+## 9. Splash
+
+## 10. Fragment
 Task: Buatlah fragment menu dengan tema Genre Film (Action, Komedi dan Romance).  
 Tampilan bisa berisi sinopsis film dan gambar dari film tersebut.
 
 Preview :  
 
 <img src="Read/picture/fragment.gif" width=200>
+
+## 11. Sinopsis
+## 12. Trailer / Playable Video
 
 ----------------------------
 
