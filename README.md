@@ -19,16 +19,20 @@ Hyperlink masing-masing penjelasan lengkap setiap activity :
 ---------------------------
 
 ## 1. Halo
+Activity pertama yang dibuat adalah Activity Halo. Menampilkan aktivitas teks "Halo! Apa Kabar?"
+
 ## 2. Toast
+
 ## 3. Scrolling (Ice Cold)
 ## 4. Count
 ## 5. Fibonacci
-## 6. Pesan
-## 7. Menu
-## 8. Maps
-## 9. Splash
+## 6. Intent
+## 7. Pesan
+## 8. Menu
+## 9. Maps
+## 10. Splash
 
-## 10. Fragment
+## 11. Fragment
 Task: Buatlah fragment menu dengan tema Genre Film (Action, Komedi dan Romance).  
 Tampilan bisa berisi sinopsis film dan gambar dari film tersebut.
 
@@ -36,8 +40,8 @@ Preview :
 
 <img src="Read/picture/fragment.gif" width=200>
 
-## 11. Sinopsis
-## 12. Trailer / Playable Video
+## 12. Sinopsis
+## 13. Trailer / Playable Video
 
 ----------------------------
 
