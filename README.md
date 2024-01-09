@@ -6,6 +6,9 @@ Dosen       : Donny Maulana, S.Kom., M.M.S.I.
 Nama        : Rafi Maulana Firdaus
 NIM         : 312210382
 ```
+--------------------------
+
+![fetchpng](https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/3a89b928-b1fe-47fc-9ca8-ca9fb74e33f7)
 
 Hyperlink masing-masing penjelasan lengkap setiap activity :  
 - [Penjelasan Toast](Read/READMEToast.md)
