@@ -115,9 +115,8 @@ https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/fbe6aa79-1ada-4924-
 
 ## Capture akhir dari semua aktivitas :  
 
+https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/d83bcbc4-abc4-4cab-abd0-84f6a7266ba2
+
 --------------------------
 # Terima Kasih
-
-
-
 
