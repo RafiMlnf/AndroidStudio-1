@@ -8,16 +8,20 @@ NIM         : 312210382
 ```
 --------------------------
 
-![fetchpng](https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/3a89b928-b1fe-47fc-9ca8-ca9fb74e33f7)
+
 
 Hyperlink masing-masing penjelasan lengkap setiap activity :  
+
+- [Penjelasan Hello](Read/READMEHello.md)
 - [Penjelasan Toast](Read/READMEToast.md)
+- [Penjelasan News/ScrollingIceCold](Read/READMENews.md)
 - [Penjelasan Pesan (Activity1&2)](Read/READMEPesan.md)
 - [Penjelasan Fibonacci](Read/READMEFibonacci.md)
 - [Penjelasan Alarm](Read/READMEAlarm.md)
 - [Penjelasan Maps](Read/READMEMaps.md)
-- [Penjelasan Splash]
-- [Penjelasan Fragment]
+- [Penjelasan Splash](Read/READMESplash.md)
+- [Penjelasan Fragment](Read/READMEFragment.md)
+- [Penjelasan Sinopsis & Trailer](Read/READMETrailer.md)
 
 ---------------------------
 
@@ -71,13 +75,14 @@ Mengirimkan pesan dari aktivitas 1 lalu menampilkan pesan di aktivitas 2 (Explic
 https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/aaf0a9d5-d487-4874-adcf-7bc2b53a68b8
 
 ## 8. Menu
-<img src="img/menu.jpg" width=100>  
+Tata letak untuk setiap aktivitas  
+
+<img src="img/menu.jpg" width=200>  
 
 ## 9. Maps  
-Memanggil sistem untuk membuka Google Maps (Implicit intent)  
-https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/83c719b7-d49d-4af0-bd06-dbafdd8bc723
+Memanggil/meminta sistem untuk membuka Google Maps (Implicit intent)  
 
-
+https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/fd2907a0-4c93-436e-9812-d763dee6c075
 
 ## 10. Splash  
 Layar awal yang muncul sebentar saat aplikasi dijalankan sebelum berpindah ke layar utama atau menu utama.
@@ -85,7 +90,7 @@ Layar awal yang muncul sebentar saat aplikasi dijalankan sebelum berpindah ke la
 https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/d1b48d1e-c2e9-419f-be3e-ca7e7252c546
 
 ## 11. Fragment
-
+Fragments dalam Android Studio adalah komponen UI yang dapat digunakan untuk membangun antarmuka pengguna yang dapat diulang dan modular. Fragments memungkinkan untuk membuat tata letak yang dinamis dan fleksibel, terutama untuk aplikasi yang dapat dijalankan di perangkat dengan layar yang berbeda-beda, seperti tablet dan ponsel.
 
 ## 12. Sinopsis & Trailer / Playable Video  
 https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/fbe6aa79-1ada-4924-8ba4-ccecd21963d7
@@ -107,6 +112,11 @@ https://github.com/RafiMlnf/AndroidStudio-1/assets/115614668/fbe6aa79-1ada-4924-
 
 ### 3. Fragment
    - Animasi pressed respons / responsive icon ketika ditekan
+
+## Capture akhir dari semua aktivitas :  
+
+--------------------------
+# Terima Kasih
 
 
 
